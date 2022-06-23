@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "itches": ["packages/itches/src"],
+      "theme": ["packages/theme/src"]
+    }
+  }
+}
+
