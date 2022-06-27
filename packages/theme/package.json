@@ -7,7 +7,7 @@
   "homepage": "https://github.com/onurkerimov/itches",
   "repository": {
     "type": "git",
-    "url": "https://github.com/onurkerimov/itches",
+    "url": "https://github.com/onurkerimov/itches"
   },
   "license": "MIT",
   "peerDependencies": {

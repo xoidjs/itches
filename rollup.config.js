@@ -78,6 +78,7 @@ async function main() {
     });
 
     if(types) {
+      // This relies on "declarationDir": "dist/ts-out", line in tsconfig
       const typesInput = path.join('dist/ts-out', basePath, 'src/index.d.ts');
       const typesOutput = []
       if(main) typesOutput.push({ file: path.join(outputPath, 'index.d.ts'), format: 'es' })

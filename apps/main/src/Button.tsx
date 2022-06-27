@@ -1,6 +1,6 @@
-import { css, box } from 'theme'
+import { css, box, darkTheme } from 'theme'
 
-const classes2 = {
+const classes = {
   root: css((theme) => ({
     appearance: 'none',
     backgroundColor: 'transparent',
@@ -9,6 +9,9 @@ const classes2 = {
     padding: theme.space[1],
     transition: 'background 200ms',
     cursor: 'pointer',
+    ['.' + darkTheme]: {
+      color: 'white',
+    },
     '&:hover': {
       background: theme.primary.light,
     },
@@ -17,10 +20,10 @@ const classes2 = {
 
 export const ButtonBase = box((props) => ({
   as: 'button',
-  cx: [classes2.root],
+  cx: classes.root,
 }))
 
-const classes = {
+const classesExtended = {
   variant: {
     default: {},
     danger: css((theme) => ({ borderColor: theme.danger.main })),
@@ -30,7 +33,10 @@ const classes = {
 
 export const Button = box((props: { variant: 'default' | 'danger'; disabled?: boolean }) => ({
   as: ButtonBase,
-  cx: [classes.variant[props.variant || 'default'], { [classes.disabled]: props.disabled }],
+  cx: [
+    classesExtended.variant[props.variant || 'default'],
+    { [classesExtended.disabled]: props.disabled },
+  ],
   children: 'Switch theme!!!',
 }))
 

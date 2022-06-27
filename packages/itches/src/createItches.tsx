@@ -33,17 +33,18 @@ export type AttrsProps<T extends Record<string, any>, U extends keyof T> = Omit<
 const run = (fn: any, arg: any) => (typeof fn === 'function' ? fn(arg) : fn)
 
 const proxy = <T extends object>(item: T) => {
-  const set = new Set()
+  const set = new Set<string>()
   const proxy = new Proxy(item, {
     get(target, key) {
-      set.add(key)
+      set.add(key as string)
       return Reflect.get(target, key)
     },
   })
-  return [proxy, set]
+  return [proxy, set] as const
 }
 
-const omit = (object: object, set: Set<'string'>) => {
+const omit = (object: object, set: Set<string>) => {
+  // @ts-ignore
   set.forEach((value) => delete object[value])
   return object
 }

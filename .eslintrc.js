@@ -22,5 +22,5 @@ module.exports = {
     }]
   },
   settings: {},
-  ignorePatterns: ["*.js"]
+  ignorePatterns: ["*.js", "dist"]
 };
