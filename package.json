@@ -1,0 +1,49 @@
+{
+  "name": "itches",
+  "version": "0.0.3",
+  "main": "./index.js",
+  "module": "./index.esm.js",
+  "types": "./index.d.ts",
+  "sideEffects": false,
+  "description": "A tool for prefilling React component props, as well as a styling utility.",
+  "homepage": "https://github.com/onurkerimov/boxoid#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onurkerimov/boxoid"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "css4",
+    "variables",
+    "synergy",
+    "recipe",
+    "theming",
+    "theme"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "prettier": "^2.0.5",
+    "@types/node": "^14.11.8",
+    "@types/react": "^16.9.52",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "rollup": "^2.30.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-dts": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.3"
+  }
+}

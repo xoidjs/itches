@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "target": "ES6",
+    "jsx": "react",
+    "downlevelIteration": true,
+    "strict": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationDir": "dist/ts-out",
+    "esModuleInterop": true
+  },
+  "include": ["src"]
+}
